@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <meta charset="UTF-8">
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h2 class="logo">NoteFlow</h2>
+    <nav class="navigation">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Services.html">Services</a>
+            <a href="aboutus.html">About</a>
+            <a href="contactus.html">Contact</a>
+        </div>
+        <div class="login-wrapper">
+            <button class="bthLogin-popup">Login/Register</button> <!-- Applied the "bthLogin-popup" class -->
+            <div class="icon-close"></div> <!-- Applied the "icon-close" class -->
+        </div>
+    </nav>
+</header>
+<div class="wrapper">
+    <!-- Your login and registration forms -->
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form method="post" action="login_process.php">
+            <!-- Input fields for email and password -->
+            <div class="input-box">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" name="password" required>
+                <label for="password">Password</label>
+            </div>
+            <!-- Remember Me and Forgot Password -->
+            <div class="remember-forgot">
+                <label><input type="checkbox" name="remember_me"> Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" name="signin" class="bth">Login</button>
+            <!-- Registration link -->
+            <div class="login-register">
+                <p>Don't have an account? <a href="signup.php" class="register-link">Register</a></p>
+                
+            </div>
+            <div class="login-register">
+                <p>Login For Admin  <a href="adminlog.php" class="register-link">LogIn</a></p>
+                
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="scri.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
